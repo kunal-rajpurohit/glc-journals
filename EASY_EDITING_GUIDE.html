@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to change anything on the website (easy guide)</title>
+<style>
+  body{font-family:Georgia,serif;font-size:22px;line-height:1.6;max-width:900px;margin:0 auto;padding:24px;color:#222;background:#fffdf7}
+  h1{font-size:2.2rem;color:#7A1E2E}
+  h2{font-size:1.7rem;background:#7A1E2E;color:#fff;padding:.5rem 1rem;border-radius:12px;margin-top:2.6rem}
+  .step{display:flex;gap:1rem;align-items:flex-start;margin:1rem 0;padding:1rem;border:3px solid #eadfb8;border-radius:14px;background:#fff}
+  .n{flex:none;width:52px;height:52px;border-radius:50%;background:#C9A227;color:#1a1405;font:700 28px sans-serif;display:flex;align-items:center;justify-content:center}
+  .tip{background:#e8f5e9;border-left:8px solid #2e7d32;padding:.8rem 1rem;border-radius:8px;margin:1rem 0}
+  .warn{background:#fdecea;border-left:8px solid #c62828;padding:.8rem 1rem;border-radius:8px;margin:1rem 0}
+  code,kbd{background:#f1ece0;padding:.1rem .45rem;border-radius:6px;font-family:Consolas,monospace;font-size:.9em}
+  .yellow{background:#ffe27a;padding:.1rem .6rem;border-radius:999px;font:700 .85em sans-serif}
+  table{border-collapse:collapse;width:100%;font-size:.95em}td,th{border:2px solid #eadfb8;padding:.5rem .7rem;text-align:left}th{background:#f6efd5}
+</style>
+</head>
+<body>
+
+<h1>&#9998; How to change anything on the website</h1>
+<p>This guide is for everyone. You do not need to know any computer code. If you can type in a letter, you can do all of this.</p>
+
+<div class="tip"><strong>The golden rule:</strong> only change the <em>words</em>. Leave the boxes, buttons and pictures where they are. If you make a mistake, press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to undo, or just close the page without pressing Save.</div>
+
+<h2>1. Sign in</h2>
+<div class="step"><div class="n">1</div><div>Open the website. Click <b>Log in</b> at the very top right.</div></div>
+<div class="step"><div class="n">2</div><div>Type your email and password. Click <b>Log in</b>.<br>
+Use the email <code>kunalrajpurohit@glcmumbai.example</code> and the password you were given separately. Janeway always asks for an <b>email address</b>, not a plain name, so type the full address above. Change the password straight away (click your name &rarr; <b>My profile</b>).</div></div>
+<div class="step"><div class="n">3</div><div>You will now see a pale yellow bar at the top of the page. That means you can edit.</div></div>
+
+<h2>2. Change words on any page</h2>
+<div class="step"><div class="n">1</div><div>Go to the page you want to change.</div></div>
+<div class="step"><div class="n">2</div><div>Look for the yellow <span class="yellow">&#9998; Edit</span> button. On the home page there is one on every section. On other pages it sits at the bottom right of the screen.</div></div>
+<div class="step"><div class="n">3</div><div>Click it. A page opens with a big writing box. Click inside the box and type, just like in a letter.</div></div>
+<div class="step"><div class="n">4</div><div>Click the green <b>Save</b> button at the bottom.</div></div>
+<div class="step"><div class="n">5</div><div>Go back to the website and press <kbd>F5</kbd>. Your new words are there.</div></div>
+
+<h2>3. Change the menu at the top</h2>
+<div class="step"><div class="n">1</div><div>Click <b>Change the menu</b> in the yellow bar.</div></div>
+<div class="step"><div class="n">2</div><div>You see a list of menu names. Click a name to change it. Click <b>Save</b>.</div></div>
+<div class="step"><div class="n">3</div><div>To add a new menu button, use the form on the same page: type the <b>Display name</b> (what people see) and the <b>Link</b> (where it goes), then save.</div></div>
+
+<h2>4. Change the colours of a journal</h2>
+<div class="step"><div class="n">1</div><div>Click <b>All pages</b> in the yellow bar. Click the page called <b>Site Colours</b>.</div></div>
+<div class="step"><div class="n">2</div><div>You will see two colour codes that start with <code>#</code>. The first is the <b>main colour</b>. The second is the <b>accent colour</b>. Change them to any colour code you like.</div></div>
+<div class="step"><div class="n">3</div><div>Click <b>Save</b>. The whole journal changes colour.</div></div>
+<div class="tip">Keep the main colour dark, so the white words on top of it are easy to read. Good colour codes can be found by searching &ldquo;colour picker&rdquo; on the internet.</div>
+
+<h2>5. Change a picture</h2>
+<p>All pictures right now say <b>TEST IMAGE</b>. Replace them with real photos like this:</p>
+<div class="step"><div class="n">1</div><div>Open the folder <code>src/static/GLCLaw/img/</code> on the computer that runs the website. Open the folder of your journal (for example <code>criminal</code>).</div></div>
+<div class="step"><div class="n">2</div><div>Put your photo in that folder. Name it something simple, for example <code>my-moot.jpg</code>.</div></div>
+<div class="step"><div class="n">3</div><div>Click the yellow <span class="yellow">&#9998; Edit</span> button on the section with the old picture. Click the picture, then click the picture icon in the toolbar and change the file name from <code>photo-1.svg</code> to <code>my-moot.jpg</code>. Click <b>Save</b>.</div></div>
+<div class="tip">Not sure? The easy way: give your new photo the <b>same name</b> as the old one (for example <code>photo-1.svg</code> becomes <code>photo-1.jpg</code>) and ask your helper to point the page to it once. After that you never touch it again.</div>
+
+<h2>6. Add a new page</h2>
+<div class="step"><div class="n">1</div><div>Click <b>All pages</b> in the yellow bar, then <b>Add New Page</b>.</div></div>
+<div class="step"><div class="n">2</div><div><b>Link</b>: one word with dashes, like <code>our-sponsors</code>. <b>Display name</b>: the title people see, like <code>Our Sponsors</code>.</div></div>
+<div class="step"><div class="n">3</div><div>Type your words in the big box. Click <b>Save</b>. The page is at <code>/your-journal/site/our-sponsors/</code>.</div></div>
+<div class="step"><div class="n">4</div><div>To put it in the menu, follow section 3 and use that same address as the Link.</div></div>
+
+<h2>7. Publish an issue or an article</h2>
+<div class="tip">The home page fills itself in. The newest issue, its articles, the news list and "From the Archive" all come from what you publish. You never type them on the home page.</div>
+<div class="step"><div class="n">1</div><div>Click your name at the top right, then <b>Manager</b>.</div></div>
+<div class="step"><div class="n">2</div><div>Open <b>Articles &amp; Issues</b> to create a new issue. Open <b>Submission</b> and the review boxes to follow papers sent in by authors. Janeway guides you step by step on each screen.</div></div>
+<div class="step"><div class="n">3</div><div>Once an issue is published, it shows up on the <b>Current Issue &amp; Archives</b> page by itself.</div></div>
+
+<h2>8. Quick answers</h2>
+<table>
+<tr><th>I want to change&hellip;</th><th>Do this</th></tr>
+<tr><td>The big heading on the home page</td><td>Home page &rarr; yellow Edit on the top section</td></tr>
+<tr><td>The three big numbers (1000+, 20+, 2023)</td><td>Home page &rarr; yellow Edit on the numbers box</td></tr>
+<tr><td>Names of the team</td><td>Menu: About &rarr; scroll to Governance, or open the page called <b>Faculty and Core Committee</b></td></tr>
+<tr><td>Phone, address, email at the bottom of every page</td><td>All pages &rarr; <b>block-footer</b></td></tr>
+<tr><td>Call for Papers rules</td><td>Menu: Journal &rarr; About the Journal &rarr; Edit</td></tr>
+<tr><td>Journal name, ISSN, logo</td><td>Manager &rarr; <b>Journal Settings</b></td></tr>
+<tr><td>The sample issues and articles</td><td>Manager &rarr; <b>Articles &amp; Issues</b>. Edit them, or delete them before launch</td></tr>
+<tr><td>Which issue shows as "Current Issue"</td><td>Manager &rarr; <b>Articles &amp; Issues</b> &rarr; Issues &rarr; set the current issue</td></tr>
+<tr><td>News on the home page</td><td>Manager &rarr; <b>News</b></td></tr>
+<tr><td>Masthead (editorial board)</td><td>Manager &rarr; <b>Users &amp; Roles</b> &rarr; Editorial Team</td></tr>
+<tr><td>Peer review, ethics, open access, indexing pages</td><td>All pages &rarr; open the page and click Edit</td></tr>
+<tr><td>Who can log in and edit</td><td>Manager &rarr; <b>Users &amp; Roles</b></td></tr>
+</table>
+
+<div class="warn"><strong>Careful:</strong> never delete a page whose name starts with <code>block-</code> or <code>site-colours</code>. The home page needs them. If you do delete one by accident, ask your helper to run <code>python manage.py glc_seed --only your-journal</code> to bring it back. (That command also puts all the test words back, so use it only on a journal you have not edited yet.)</div>
+
+<h2>The nine journals</h2>
+<table>
+<tr><th>Journal</th><th>Address</th><th>Main colour</th></tr>
+<tr><td>The Law Review (flagship)</td><td><code>/lawreview/</code></td><td>burgundy #7A1E2E</td></tr>
+<tr><td>Constitution Law</td><td><code>/constitution/</code></td><td>navy #002F65</td></tr>
+<tr><td>Taxation Law</td><td><code>/taxation/</code></td><td>forest green #1B5E3B</td></tr>
+<tr><td>Criminal Law</td><td><code>/criminal/</code></td><td>graphite #2B3440</td></tr>
+<tr><td>Banking, Finance and Mercantile Law</td><td><code>/bfm/</code></td><td>bronze #8A6410</td></tr>
+<tr><td>Women Law</td><td><code>/women/</code></td><td>plum #6B2A5B</td></tr>
+<tr><td>Human Rights</td><td><code>/humanrights/</code></td><td>rust #A8431A</td></tr>
+<tr><td>Cyber, AI and Allied Laws</td><td><code>/cyberai/</code></td><td>teal #0E7490</td></tr>
+<tr><td>Business Law</td><td><code>/business/</code></td><td>indigo #4C3FA0</td></tr>
+</table>
+</body>
+</html>

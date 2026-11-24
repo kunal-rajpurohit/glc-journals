@@ -1,0 +1,22 @@
+# Simple, single-container Docker Compose file for this pre-built site.
+# (Named docker-compose.glc.yml so it doesn't clash with Janeway's own
+# docker-compose.yml, which is for Janeway's Postgres/MySQL dev setup.)
+#
+#   docker compose -f docker-compose.glc.yml up --build
+#
+# Then open http://localhost:8000/
+version: "3.8"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      # Keep the database, uploaded files and logs outside the image, so
+      # edits made in the Manager survive a rebuild (docker compose up --build).
+      - ./db.sqlite3:/app/db.sqlite3
+      - ./src/files:/app/src/files
+      - ./logs:/app/logs
+    restart: unless-stopped

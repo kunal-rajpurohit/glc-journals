@@ -1,0 +1,19 @@
+# This keeps the Docker build context small. It intentionally does NOT
+# exclude src/files/journals, src/files/xsl, etc. — those are part of the
+# pre-built, seeded site and are needed even without the compose volumes.
+.git
+.venv
+.venv_test
+**/__pycache__
+**/*.pyc
+docs
+jenkins
+etc
+dockerfiles
+db/mysql-data
+db/mariadb-data
+db/pgadmin
+logs/*.log
+src/collected-static
+src/site_search
+*.tar.gz
